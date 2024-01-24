@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lotus Beauty Zone Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="your-logo.png" alt="Lotus Beauty Zone Logo">
+            <h1>Lotus Beauty Zone Calculator</h1>
+        </div>
+
+        <div class="calculator">
+            <label for="display">Total ₹</label>
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button onclick="appendToDisplay(50)">Eyebrow</button>
+                <button onclick="appendToDisplay(20)">Upper Lip</button>
+                <button onclick="appendToDisplay(20)">Chin</button>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Haircut</button>
+                    <div class="dropdown-content">
+                        <button onclick="appendToDisplay(100)">Level</button>
+                        <button onclick="appendToDisplay(250)">U Cut</button>
+                        <button onclick="appendToDisplay(500)">Step Cut</button>
+                        <button onclick="appendToDisplay(700)">Layer Cut</button>
+                        <button onclick="appendToDisplay(700)">Feather Cut</button>
+                        <button onclick="appendToDisplay(50)">Funky Cut</button>
+                        <button onclick="appendToDisplay(250)">Baby Cut</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Facials</button>
+                    <div class="dropdown-content">
+                        <button onclick="appendToDisplay(500)">Fruit</button>
+                        <button onclick="appendToDisplay(600)">Whitening</button>
+                        <button onclick="appendToDisplay(700)">Detan</button>
+                        <button onclick="appendToDisplay(800)">Wine</button>
+                        <button onclick="appendToDisplay(1100)">Gold</button>
+                        <button onclick="appendToDisplay(1500)">Diamond</button>
+                        <button onclick="appendToDisplay(250)">Bleach</button>
+                        <button onclick="appendToDisplay(250)">Tan</button>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Wax</button>
+                    <div class="dropdown-content">
+                        <button onclick="appendToDisplay(500)">Hands</button>
+                        <button onclick="appendToDisplay(600)">Legs</button>
+                        <button onclick="appendToDisplay(80)">Arms</button>
+                    </div>
+                </div>
+
+                <button onclick="appendToDisplay('')">Other Service</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
